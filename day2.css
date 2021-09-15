@@ -1,0 +1,41 @@
+html{
+background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.clock{
+    height: 30rem;
+    width: 30rem;
+    border: 20px solid gold;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    box-shadow:
+        0 0 0 4px rgba(127, 184, 22, 0.1),
+        inset 0 0 0 3px #61c51e,
+        inset 0 0 10px rgb(223, 248, 2),
+        0 0 10px rgba(136, 144, 13, 0.2);
+}
+.image{
+
+        width: 600px;
+    height: 600px;
+}
+.clock-face {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform: translateY(-460px); /* account for the height of the clock hands */
+    left: 160px;
+}
+.hand{
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: transform 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+}
